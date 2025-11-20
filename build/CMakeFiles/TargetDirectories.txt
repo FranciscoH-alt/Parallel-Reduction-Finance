@@ -1,0 +1,3 @@
+/Users/franciscohenriques/Projects/Parallel-Programming/parallel-reduction/build/CMakeFiles/parallel_reduction.dir
+/Users/franciscohenriques/Projects/Parallel-Programming/parallel-reduction/build/CMakeFiles/edit_cache.dir
+/Users/franciscohenriques/Projects/Parallel-Programming/parallel-reduction/build/CMakeFiles/rebuild_cache.dir
