@@ -1,0 +1,244 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #e5e7eb;
+  background-color: #020617;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a 0, #020617 55%);
+  color: inherit;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+.main-grid {
+  margin-top: 1.75rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .main-grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  }
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 1.4rem 1.5rem 1.6rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.help-text {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.textarea {
+  width: 100%;
+  resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+  background: #020617;
+  color: #e5e7eb;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  padding: 0.75rem 0.9rem;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.6);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 999px;
+  border: none;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #020617;
+}
+
+.btn.primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn.secondary {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  color: #e5e7eb;
+}
+
+.api-note {
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.api-note code {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.4rem;
+}
+
+.alert {
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.alert.error {
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.55);
+  color: #fecaca;
+}
+
+.placeholder {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.stat {
+  background: rgba(2, 6, 23, 0.9);
+  border-radius: 0.8rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid rgba(31, 41, 55, 0.9);
+}
+
+.stat .label {
+  display: block;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+
+.stat .value {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.timing-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.timing-chip {
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.timing-chip.gpu {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.7);
+}
+
+.timing-chip.cpu {
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.7);
+}
+
+.timing-label {
+  font-weight: 600;
+}
+
+.timing-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}

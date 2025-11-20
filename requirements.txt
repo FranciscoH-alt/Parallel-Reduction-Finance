@@ -10,3 +10,6 @@ nvidia-driver>=525
 nvprof
 nsight-systems
 nsight-compute
+
+
+flask
