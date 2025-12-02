@@ -6,7 +6,7 @@ float reduce_omp(const std::vector<float>& data) {
 
     // Simple OpenMP parallel reduction baseline
     #pragma omp parallel for reduction(+:sum)
-    for (std::size_t i = 0; i < data.size(); ++i) {
+    for (int i = 0; i < static_cast<int>(data.size()); ++i) {
         sum += data[i];
     }
 
