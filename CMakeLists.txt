@@ -42,7 +42,7 @@ add_executable(parallel_reduction ${SOURCES})
 
 # Compile flags (you can tweak later)
 target_compile_options(parallel_reduction PRIVATE
-    -O3 -march=native -Wall -Wextra -Wpedantic
+    /O2 /W4
 )
 
 # Link OpenMP
